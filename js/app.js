@@ -29,7 +29,7 @@ searchBtn.addEventListener("click", function () {
   sorryMsg.classList.add("d-none");
   let mySerach = inputBox.value.trim().toLowerCase();
   inputBox.value = "";
-  let url = `http://api.weatherapi.com/v1/current.json?key=7489c7043a2747328d255557212808&q=${mySerach}`;
+  let url = `https://api.weatherapi.com/v1/current.json?key=7489c7043a2747328d255557212808&q=${mySerach}`;
   fetch(url)
     .then((res) => {
       loader.classList.remove("d-none");
