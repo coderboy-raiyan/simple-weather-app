@@ -8,7 +8,7 @@ const loader = document.querySelector(".loader");
 const sorryMsg = document.querySelector(".sorry-msg");
 
 function alwaysShow() {
-  let url = `http://api.weatherapi.com/v1/current.json?key=7489c7043a2747328d255557212808&q=Bangladesh`;
+  let url = `https://api.weatherapi.com/v1/current.json?key=7489c7043a2747328d255557212808&q=Bangladesh`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => showOn(data));
